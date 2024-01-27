@@ -28,17 +28,72 @@ p {
     line-height: 1.6;
 }
 
-/* Main */
-main {
-    background: url(assets/images/background.webp) top 13% left 80%/115%;
-    background-blend-mode: darken;
-    background-repeat: repeat-y;
-    /* Make the element to take up the whole space*/
-    display: flex;
-    flex: 1 0 auto;
-    margin-top: 3.4rem;
+ /* Navbar and menu */
+ #menu {
+    list-style-type: none;
+    letter-spacing: 1px;
+    font-size: 110%;
 }
 
+#menu>li {
+    margin-bottom: 0.5em;
+}
+
+.nav-bar {
+    border-bottom: 1px solid #daa520;
+}
+
+/* Nav bar styles with drop down toggle */
+nav {
+    position: absolute;
+    background-color: #707868;
+    color: #262713;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #545545;
+    display: none;
+    top: 100%;
+}
+
+/* Nav bar toggle */
+#nav-bar-toggle:checked~nav {
+    display: block;
+}
+
+#nav-bar-toggle {
+    display: none;
+}
+
+.nav-bar-toggle-label {
+    font-size: 1.3rem;
+    color: #daa520;
+}
+
+/* Header */
+header {
+    background-image: url(../assets/images/background.webp);
+    background-color: aliceblue;
+    background-size: 600px;
+    height: 200px;
+
+}
+#logo {
+    background: url(../assets/images/Logga-liten-ts1624298009.png) no-repeat center;
+    height: 100%;
+}
+
+/* Main */
+
+/* Main content */
+main {
+    /* Make space so footer is pushed down */
+    flex: 1 0 auto;
+    margin-top: 50px;
+    /* Enable flex properties for child elements */
+        display: flex;
+        flex-direction: column;
+}
 
 
 /* Hero section */
