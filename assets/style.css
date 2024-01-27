@@ -9,6 +9,12 @@
 }
 
 /* General styles */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
