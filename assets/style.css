@@ -29,9 +29,22 @@ p {
 }
 
 /* Main */
-
 main {
-    background: url() repeat center/cover;
+    background: url(assets/images/background.webp) top 13% left 80%/115%;
+    background-blend-mode: darken;
+    background-repeat: repeat-y;
+    /* Make the element to take up the whole space*/
+    display: flex;
+    flex: 1 0 auto;
+    margin-top: 3.4rem;
+}
+
+
+#background_image {
+    
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 /* Hero section */
